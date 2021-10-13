@@ -12,9 +12,9 @@ public class MovieService {
 
     public List<Film> mockMovies() {
         List<Film> films = new ArrayList<>();
-        Film film1 = new Film();
-        film1.setId(1);
-        film1.setName("Star Wars");
+        Film movie1 = new Film();
+        movie1.setId(1);
+        movie1.setName("Star Wars");
         Actor actor1 = new Actor();
         actor1.setForeName("Matthew");
         actor1.setLastName("Mercer");
@@ -22,15 +22,15 @@ public class MovieService {
 
         List<Actor> actors = new ArrayList<>();
         actors.add(actor1);
-        film1.setActors(actors);
-        films.add(film1);
+        movie1.setActors(actors);
+        films.add(movie1);
         return films;
     }
 
     public Film mockOneMovie(Integer id) {
-        Film movie = new Film();
-        movie.setId(id);
-        movie.setName("Overwatch");
-        return movie;
+        Film movie2 = new Film();
+        movie2.setId(id);
+        movie2.setName("Overwatch");
+        return movie2;
     }
 }
