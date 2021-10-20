@@ -16,16 +16,16 @@ class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(FilmRepository filmRepository) {
         return args -> {
-            log.info("Processing " + filmRepository.save(new Film(1, "Overwatch", null)));
-            log.info("Processing " + filmRepository.save(new Film(2, "Firewatch", null)));
+            log.info("Processing " + filmRepository.save(new Film(1L, "Overwatch", null)));
+            log.info("Processing " + filmRepository.save(new Film(2L, "Firewatch", null)));
         };
     }
 
     @Bean
     CommandLineRunner initDatabase(ActorRepository actorRepository) {
         return args -> {
-            log.info("Processing " + actorRepository.save(new Actor(1, "Matthew", "Mercer", null)));
-            log.info("Processing " + actorRepository.save((new Actor(2, "Stacy", "Jule", null))));
+            log.info("Processing " + actorRepository.save(new Actor(1L, "Matthew", "Mercer", null)));
+            log.info("Processing " + actorRepository.save((new Actor(2L, "Stacy", "Jule", null))));
         };
     }
 }

@@ -13,13 +13,13 @@ import java.util.List;
 public class Actor {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
     private String foreName;
     private String lastName;
     @JsonIgnoreProperties("actors")
     @ManyToMany(mappedBy = "actors") List<Film> films = new ArrayList<>();
 
-    public Actor (int id, String foreName, String lastName, List<Actor> actors) {
+    public Actor (Long id, String foreName, String lastName, List<Actor> actors) {
         this.id = id;
         this.foreName = foreName;
         this.lastName = lastName;
