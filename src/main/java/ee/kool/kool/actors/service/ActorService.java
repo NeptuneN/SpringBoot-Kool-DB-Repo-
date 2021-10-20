@@ -14,7 +14,7 @@ public class ActorService {
         List<Actor> actors = new ArrayList<>();
         Actor actor1 = new Actor();
         actor1.setId(1);
-        // not sure
+        actor1.setForeName("");
         return actors;
     }
 

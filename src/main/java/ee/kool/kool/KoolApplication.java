@@ -9,5 +9,4 @@ public class KoolApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(KoolApplication.class, args);
 	}
-
 }
